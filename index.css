@@ -1,9 +1,17 @@
+*{
+  background: url("./bg-body.png");
+}
 body {
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  
 }
 .wrap {
   padding: 20px;
   background-color: rgb(93, 93, 243);
+ 
 }
 
 .class1 {
@@ -33,11 +41,12 @@ body {
 }
 
 .class2 {
-  margin-top: 20px;
+  margin-top: 0px;
   text-align: center;
 }
 .class2 h2 {
   font-size: 20px;
+  
   margin-bottom: 10px;
   color: white;
 }
@@ -122,12 +131,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+.classCard2 .card1 {
+  width: 100%;
+}
 
 .classCard3 .card10 {
     background-color: white;
     gap: 10px;
     border-radius: 5px;
     align-items: center;
+    margin-bottom: 25px;
+    padding: 4px
 }
 .card10 {
     display: flex;
@@ -177,6 +191,9 @@ body {
 .class5 {
   text-align: center;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .class5 h6 {
   font-size: 18px;
@@ -206,11 +223,80 @@ body {
 .footer span {
   font-size: 12px;
 }
+.class5 .logo {
+  display: flex; 
+  justify-content: row;
+  align-items: center;
+  flex-direction: row;
+}
+
+.class5 .logo .ig,
+.class5 .logo .fb {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  background-color: #007bff; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 10px; 
+}
+
+.class5 .logo .ig i,
+.class5 .logo .fb i {
+  color: #fff; /* Warna ikon */
+  font-size: 24px; /* Ukuran ikon */
+}
+.class5 .ipsum{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+hr{
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 @media only screen and (min-width: 768px) {
+ 
+  .class1 {
+    max-width: 600px; 
+    margin: 0 auto;
+    border-radius: 8px; 
+    text-align: center; 
+   
+  }
+  
+  .class1 .img {
+    margin-bottom: 20px; 
+  }
+  
+  .class1 img {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
+  .class1 h1 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+  }
+  
+  .class1 p {
+    font-size: 16px; 
+    line-height: 1.6; 
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .class1 .classbutton button:hover {
+    background-color: #0056b3; 
+  }
   .card1 {
     width: 30%;
     display: flex;
+    gap: 20px;
     flex-direction: column;
   }
 
@@ -230,6 +316,13 @@ body {
     align-items: start;
     text-align: left;
   }
+  .class5 .ipsum {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: start;
+  }
+
   .bonus {
     display: flex;
     flex-direction: row;
@@ -240,10 +333,18 @@ body {
 
   .classCard2 .card1 {
     justify-content: center;
+    width: 40%;
+  }
+  .classCard2 .card1 p{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
   .card10 {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    
     background-color: white;
     gap: 5px;
     padding: 10px 15px;
@@ -260,4 +361,6 @@ body {
     width: 80%;
     margin: auto;
   }
+ 
+
 }
